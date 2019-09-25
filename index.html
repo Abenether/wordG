@@ -9,7 +9,7 @@
 </head>
 <script>
 
-alert ("you have 10 guesses. what word am i guessing ")
+alert ("you have 10 guesses. what letter am i guessing ")
 
 var answer = "s";
 var guess = prompt("what's your guess?");
@@ -25,11 +25,11 @@ guess = prompt("please try again");
 }
 
 
-alert ("round 2. you have 6 guesses. what word am i guessing")
+alert ("round 2. you have 6 guesses. what letter am i guessing")
 var answerA = "p";
 var guessB = prompt("what's your guess?");
 
-for (i = 0; i < 10; i++) {
+for (i = 0; i < 5; i++) {
 if (answerA == guessB) {
 alert ("you guessed correctly");
 break;
@@ -41,7 +41,7 @@ guessB = prompt("please try again");
 
 
 
-alert (" what word am i guessing. YOU HAVE 2 GUESSES")
+alert (" what letter am i guessing. YOU HAVE 2 GUESSES")
 var answerC = "q";
 var guessC = prompt("what's your guess?");
 
@@ -65,7 +65,7 @@ guessC = prompt("please try again");
         </div>
         <div class="card-body">
           <p class="card-text"></p>
-          <a href="#" id="number-maker" class="btn btn-primary">generate number</a>
+          <a href="#" id="number-maker" class="btn btn-primary">refresh to generate </a>
           <script src="assets/index.js">
           
           
