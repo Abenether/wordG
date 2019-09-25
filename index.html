@@ -1,80 +1,95 @@
 <!DOCTYPE html>
-<html lang="eng"></html>
+
+<html lang="en">
+
+
+
 <head>
+
     <meta charset="UTF-8">
-    <title>lotery</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Hangman</title>
+
 </head>
-<script>
-
-alert ("you have 10 guesses. what letter am i guessing ")
-
-var answer = "s";
-var guess = prompt("what's your guess?");
-
-for (i = 0; i < 10; i++) {
-if (answer == guess) {
-alert ("you guessed correctly");
-break;
-} 
-else {
-guess = prompt("please try again");
-}
-}
-
-
-alert ("round 2. you have 6 guesses. what letter am i guessing")
-var answerA = "p";
-var guessB = prompt("what's your guess?");
-
-for (i = 0; i < 5; i++) {
-if (answerA == guessB) {
-alert ("you guessed correctly");
-break;
-} 
-else {
-guessB = prompt("please try again");
-}
-}
 
 
 
-alert (" what letter am i guessing. YOU HAVE 2 GUESSES")
-var answerC = "q";
-var guessC = prompt("what's your guess?");
-
-for (i = 0; i < 1; i++) {
-if (answerC == guessC) {
-alert ("you guessed correctly");
-break;
-} 
-else {
-guessC = prompt("please try again");
-}
-}
-
-
-
-</script>
 <body>
-    <div class="card">
-        <div class="card-header">
-        <h1>Word Guess</h1> 
+
+    <header>
+
+        <div class="jumbotron">
+
+            Lord of the Rings
+
+            Hangman
+
         </div>
-        <div class="card-body">
-          <p class="card-text"></p>
-          <a href="#" id="number-maker" class="btn btn-primary">refresh to generate </a>
-          <script src="assets/index.js">
-          
-          
-       
-          
-          
-          
-          </script>
+
+    </header>
+
+
+
+    <div class="container ">
+
+        <div class="row-md-12">
+
+            <div class="col-m-5 card">
+
+                <img src="https://live.staticflickr.com/7434/13127948683_ae31fd2752_b.jpg" alt="The question">
+
+                <p id='character-description'></p>
+
+            </div>
+
+            <div class="col-m-5 card">
+
+
+
+                <p id="directions">Press Any Key to Start</p>
+
+                Letters Guessed
+
+                <p id="wrong-guesses"></p>
+
+                <p id="underscores">_ _ _ _ _ _ _ </p>
+
+                Guesses Remaining
+
+                <p id="guesses-remaining"></p>
+
+                Wins
+
+                <p id="win-counter"></p>
+
+                Losses
+
+                <p id="loss-counter"></p>
+
+            </div>
+
         </div>
-      </div>
-      
+
+    </div>
+
+    <footer>footer</footer>
+
 </body>
+
+<script src="assets/javascript/game.js"></script>
+
+
+
+</html>
