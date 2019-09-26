@@ -1,5 +1,8 @@
 
-var lotrChar = [
+alert("hello, you have entered the trivia game")
+alert("guess world sports")
+    
+    var lotrChar = [
 
     "soccer",
 
